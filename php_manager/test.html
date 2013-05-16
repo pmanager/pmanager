@@ -1,0 +1,187 @@
+ <script src="javascript/jquery.js"></script>
+  <script type="text/javascript" src="javascript/ui.core.js"></script>
+  <script type="text/javascript" src="javascript/ui.selectable.js"></script>
+  <script type="text/javascript" src="javascript/ui.resizable.js"></script>
+  <script type="text/javascript" src="javascript/jquery.tablesorter.js"></script>
+  <script type="text/javascript" src="javascript/jquery.disable.text.select.js"></script>
+<script>
+$(document).ready(function() { 
+
+    $("table").tablesorter(
+	{
+	textExtraction: "complex"
+	}
+	); 
+		
+    $("#trigger-link").click(function() { 
+        // set sorting column and direction, this will sort on the first and third column the column index starts at zero 
+        var sorting = [[0,0]]; 
+		
+        // sort on the first column 
+        $("table").trigger("sorton",[sorting]); 
+        // return false to stop default link action 
+        return false; 
+    }); 
+});
+</script>
+
+
+
+<table style="width:100%;overflow:hidden;background:#D7C9A1;">
+				<tr>
+					<td class="table_head link" id="link"><a id="trigger-link" href="#">Name</a></td>
+					<td class="table_head ext" id="ext">Ext</td>
+					<td class="table_head size" id="size">Size</td>
+
+				</tr>
+			</table>
+		<div style='float:left;height:95%;overflow:scroll;width:100%;background:white'>
+		
+			<table style='width:100%;overflow:hidden;background:#D7C9A1;' id='tabel'>
+				<thead style='display:none'>
+					<th>Icon</th>
+					<th>Name</th>
+					<th>Ext</th>
+
+					<th>Size</th>
+				</thead>
+		<tr>
+			<td colspan=4  style='font-size:13px;font-family:arial;padding:3px;' ondblclick=window.location='direct.php?ff=Li4=' >
+				<a href='direct.php?ff=Li4='>Parent directory</a>
+			</td>
+		</tr>
+					<tr>
+
+						<td class="icon"><img src="images/icons/irfanview.png"></td>
+						<td class="link">business</td>
+						<td class="ext">png</td>
+						<td class="size">47.00 Kb</td>
+					</tr>
+					<tr>
+						<td class="icon"><img src="images/icons/irfanview.png"></td>
+
+						<td class="link">business2</td>
+						<td class="ext">png</td>
+						<td class="size">79.09 Kb</td>
+					</tr>
+					<tr>
+						<td class="icon"><img src="images/icons/document.png"></td>
+						<td class="link"><a href="..//canvas.html">canvas</a></td>
+
+						<td class="ext">html</td>
+						<td class="size">2.25 Kb</td>
+					</tr>
+			  <tr ondblclick="open_folder('direct.php?ff=Li4vL0RFVkVM')">
+				<td class="icon"><img src="images/icons/folder.png"></td>
+				<td class="link"><a title="DEVEL" href="direct.php?ff=Li4vL0RFVkVM"  >DEVEL</a></td>
+				<td class="ext">DIR&gt;</td>
+
+				<td class="size">&nbsp;</td>
+			  </tr>
+			  <tr ondblclick="open_folder('direct.php?ff=Li4vL2V5ZU9T')">
+				<td class="icon"><img src="images/icons/folder.png"></td>
+				<td class="link"><a title="eyeOS" href="direct.php?ff=Li4vL2V5ZU9T"  >eyeOS</a></td>
+				<td class="ext">DIR&gt;</td>
+				<td class="size">&nbsp;</td>
+			  </tr>
+
+			  <tr ondblclick="open_folder('direct.php?ff=Li4vL2ZsYXNoZ2FsbGVyeQ==')">
+				<td class="icon"><img src="images/icons/folder.png"></td>
+				<td class="link"><a title="flashgallery" href="direct.php?ff=Li4vL2ZsYXNoZ2FsbGVyeQ=="  >flashgallery</a></td>
+				<td class="ext">DIR&gt;</td>
+				<td class="size">&nbsp;</td>
+			  </tr>
+					<tr>
+						<td class="icon"><img src="images/icons/winrar.png"></td>
+
+						<td class="link"><a href="..//flashgallery.zip">flashgallery</a></td>
+						<td class="ext">zip</td>
+						<td class="size">1.08 Mb</td>
+					</tr>
+			  <tr ondblclick="open_folder('direct.php?ff=Li4vL2ljb25z')">
+				<td class="icon"><img src="images/icons/folder.png"></td>
+				<td class="link"><a title="icons" href="direct.php?ff=Li4vL2ljb25z"  >icons</a></td>
+
+				<td class="ext">DIR&gt;</td>
+				<td class="size">&nbsp;</td>
+			  </tr>
+					<tr>
+						<td class="icon"><img src="images/icons/document.png"></td>
+						<td class="link"><a href="..//index.php">index</a></td>
+						<td class="ext">php</td>
+
+						<td class="size">47.00 B</td>
+					</tr>
+					<tr>
+						<td class="icon"><img src="images/icons/document.png"></td>
+						<td class="link"><a href="..//ndex.html">ndex</a></td>
+						<td class="ext">html</td>
+						<td class="size">4.08 Kb</td>
+
+					</tr>
+			  <tr ondblclick="open_folder('direct.php?ff=Li4vL290aGVycw==')">
+				<td class="icon"><img src="images/icons/folder.png"></td>
+				<td class="link"><a title="others" href="direct.php?ff=Li4vL290aGVycw=="  >others</a></td>
+				<td class="ext">DIR&gt;</td>
+				<td class="size">&nbsp;</td>
+			  </tr>
+			  <tr ondblclick="open_folder('direct.php?ff=Li4vL3BocF9tYW5hZ2Vy')">
+
+				<td class="icon"><img src="images/icons/folder.png"></td>
+				<td class="link"><a title="php_manager" href="direct.php?ff=Li4vL3BocF9tYW5hZ2Vy"  >php_manager</a></td>
+				<td class="ext">DIR&gt;</td>
+				<td class="size">&nbsp;</td>
+			  </tr>
+					<tr>
+						<td class="icon"><img src="images/icons/winrar.png"></td>
+						<td class="link"><a href="..//php_manager.rar">php_manager</a></td>
+
+						<td class="ext">rar</td>
+						<td class="size">4.83 Mb</td>
+					</tr>
+					<tr>
+						<td class="icon"><img src="images/icons/winrar.png"></td>
+						<td class="link"><a href="..//php_manager.zip">php_manager</a></td>
+						<td class="ext">zip</td>
+
+						<td class="size">249.50 Kb</td>
+					</tr>
+			  <tr ondblclick="open_folder('direct.php?ff=Li4vL3BocF9tYW5hZ2VyX29sZA==')">
+				<td class="icon"><img src="images/icons/folder.png"></td>
+				<td class="link"><a title="php_manager_old" href="direct.php?ff=Li4vL3BocF9tYW5hZ2VyX29sZA=="  >php_manager_old</a></td>
+				<td class="ext">DIR&gt;</td>
+				<td class="size">&nbsp;</td>
+
+			  </tr>
+			  <tr ondblclick="open_folder('direct.php?ff=Li4vL1NpbmdsZV9GaWxlX1BIUF9HYWxsZXJ5XzQuMC4w')">
+				<td class="icon"><img src="images/icons/folder.png"></td>
+				<td class="link"><a title="Single_File_PHP_Gallery_4.0.0" href="direct.php?ff=Li4vL1NpbmdsZV9GaWxlX1BIUF9HYWxsZXJ5XzQuMC4w"  >Single_File_PHP_Gallery_4.0.0</a></td>
+				<td class="ext">DIR&gt;</td>
+				<td class="size">&nbsp;</td>
+			  </tr>
+					<tr>
+
+						<td class="icon"><img src="images/icons/winrar.png"></td>
+						<td class="link"><a href="..//Single_File_PHP_Gallery_4.0.0.zip">Single_File_PHP_Gallery_4.0.0</a></td>
+						<td class="ext">zip</td>
+						<td class="size">18.21 Kb</td>
+					</tr>
+					<tr>
+						<td class="icon"><img src="images/icons/irfanview.png"></td>
+
+						<td class="link"><a href="..//tab_gri.png">tab_gri</a></td>
+						<td class="ext">png</td>
+						<td class="size">849.00 B</td>
+					</tr>
+			  <tr ondblclick="open_folder('direct.php?ff=Li4vL1Rlc3Q=')">
+				<td class="icon"><img src="images/icons/folder.png"></td>
+				<td class="link"><a title="Test" href="direct.php?ff=Li4vL1Rlc3Q="  >Test</a></td>
+
+				<td class="ext">DIR&gt;</td>
+				<td class="size">&nbsp;</td>
+			  </tr></div></table>
+
+
+
+<a href="#" id="trigger-link">sort first and third columns</a><br><br>
+
